@@ -1,0 +1,7 @@
+.personHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: teal;
+}
