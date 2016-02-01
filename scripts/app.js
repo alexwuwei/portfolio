@@ -18,6 +18,10 @@ Project.prototype.toHtml = function () {
   return $newProject;
 };
 
+rawData.sort(function(a,b) {
+  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+});
+
 rawData.forEach(function(ele) {
   projects.push(new Project(ele));
 });
@@ -25,3 +29,5 @@ rawData.forEach(function(ele) {
 projects.forEach(function(a){
   $('#projects').append(a.toHtml());
 });
+
+$('.template').hide();
