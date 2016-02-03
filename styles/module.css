@@ -1,0 +1,18 @@
+#projects {
+  background-color: rgba(0, 56, 41, 0.8);
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  font-family: lora;
+  padding-right: 10%;
+  margin-left: 2%;
+  border-bottom: 2px solid white;
+  color: white;
+
+}
+
+#about {
+  background-color: rgba(70, 139, 120, 0.8);
+  padding: 1%;
+  font-family: roboto;
+}
