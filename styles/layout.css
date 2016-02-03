@@ -27,7 +27,23 @@
   text-decoration: none;
 }
 
+.hmenu-container img {
+  display: none;
+}
+
 @media only screen and (max-width: 640px) {
-  .heading-group-h1 {
-  
+  .main-nav-bar ul {
+    display:none
   }
+  .main-nav-bar:hover ul {
+    display: block;
+  }
+
+  .hmenu-container {
+    width: 10%;
+  }
+  .hmenu-container img {
+    display: block;
+    max-width: 100%
+  }
+}
