@@ -1,11 +1,12 @@
 .personHeader {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: flex-end;
   background-color: teal;
   border-bottom: 3px solid white;
   font-family: sans-serif;
+  padding-right: 2%;
 }
 
 #projects {
