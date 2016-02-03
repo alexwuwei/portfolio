@@ -21,3 +21,14 @@
 .byline {
   font-style: italic;
 }
+
+h1, h2 {
+  color: #162856;
+}
+
+.main-nav-bar > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-right: 5%;
+}
