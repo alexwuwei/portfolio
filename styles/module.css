@@ -15,3 +15,37 @@
   padding: 1%;
   font-family: roboto;
 }
+
+.test-image {
+  background-image: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-120534.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  outline: dotted 1px red;
+  /*position: relative;*/
+  /*z-index: -1;*/
+}
+
+.test-image-contents {
+  height: 20em;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: dotted 1px red;
+}
+
+.test-image-contents h1 {
+  display: inline-block;
+  /*position: absolute;*/
+  font-size: 4.23em;
+  color: white;
+  outline: dotted 1px red;
+  color: #F0F0F0;
+}
+
+.test-image-contents h3 {
+  display: inline-block;
+  top: 1em;
+  /*position: absolute;*/
+  font-size: 1.618em;
+  color: #F0F0F0;
+  outline: dotted 1px red;
+}

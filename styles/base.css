@@ -3,3 +3,8 @@ h1, h2 {
   font-family: roboto;
   font-weight: bold;
 }
+
+body {
+  margin: none;
+  padding: none;
+}
