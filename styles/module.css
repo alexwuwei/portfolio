@@ -1,12 +1,13 @@
 #projects {
-  background-color: rgba(0, 56, 41, 0.8);
+  background-color: white;
   padding: 1%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: lora;
   padding-right: 10%;
   border-bottom: 2px solid white;
-  color: white;
+  color: black;
 
 }
 
@@ -36,7 +37,6 @@
   display: inline-block;
   /*position: absolute;*/
   font-size: 4.23em;
-  color: white;
   outline: dotted 1px red;
   color: #F0F0F0;
 }
@@ -48,4 +48,22 @@
   font-size: 1.618em;
   color: #F0F0F0;
   outline: dotted 1px red;
+  font-family: roboto;
+}
+
+.main-nav-bar > ul > li {
+  /*background-color: blue;
+  color: #F0F0F0;
+  border: 3px solid white;
+  border-radius:
+  margin: 1em;
+  outline: dotted 1px red;*/
+
+background-color: blue;
+color: white;
+padding: 14px 25px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+border-radius: 5px;
 }
