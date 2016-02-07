@@ -81,4 +81,10 @@
   .hmenu-container img {
     display: none;
   }
+
+  .about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

@@ -41,6 +41,8 @@
   color: #F0F0F0;
 }
 
+
+
 .test-image-contents h3 {
   display: inline-block;
   top: 1em;
@@ -66,4 +68,14 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 border-radius: 5px;
+}
+
+.contact-button {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
 }
