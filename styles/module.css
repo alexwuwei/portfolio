@@ -1,17 +1,173 @@
-#projects {
-  background-color: rgba(0, 56, 41, 0.8);
+
+.nav-content {
+  background-color: white;
   padding: 1%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: lora;
-  padding-right: 10%;
+  padding-right: 20%;
   border-bottom: 2px solid white;
-  color: white;
+  color: black;
 
 }
 
+.project-container {
+  display: inline;
+}
+
+
 #about {
-  background-color: rgba(70, 139, 120, 0.8);
+  background-color: #F0F0F0;
   padding: 1%;
   font-family: roboto;
+}
+
+.test-image {
+  background-image: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-120534.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  outline: dotted 1px red;
+}
+
+.test-image-contents {
+  height: 32em;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: dotted 1px red;
+  color: #F0F0F0;
+}
+
+.test-image-contents h1 {
+  display: block;
+  position: absolute;
+  font-size: 2.618em;
+  outline: dotted 1px red;
+  color: #F0F0F0;
+  padding-right: 2%;
+}
+
+
+
+.test-image-contents h3 {
+  display: block;
+  position: absolute;
+  top: 22%;
+  /*position: absolute;*/
+  font-size: 1.618em;
+  color: #F0F0F0;
+  outline: dotted 1px red;
+  font-family: roboto;
+}
+
+.test-image-contents p {
+  color: #F0F0F0;
+  display: block;
+  position: absolute;
+  width: 60%;
+  top: 40%;
+  left: 15%;
+  font-size: 1.1em;
+  font-family: lora;
+}
+
+.test-image-contents ul {
+  /*display: inline;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  top: 24em;
+  left: 12em;
+  color: white;
+  list-style: none;
+}
+
+
+.contact-form input  {
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-align: left;
+}
+
+.contact-form textarea  {
+  border-radius: 5px;
+  padding: 7px 15px;
+  text-align: left;
+}
+
+.contact-button {
+  background-color: blue;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.social-container a {
+  color: blue;
+}
+
+/*.main-nav-bar {
+  display: none;
+}*/
+
+@media screen and (min-width: 640px) {
+
+  .test-image-contents h1 {
+    display: block;
+    position: absolute;
+    font-size: 4.23em;
+    outline: dotted 1px red;
+    color: #F0F0F0;
+  }
+
+
+
+  .test-image-contents h3 {
+    display: block;
+    position: absolute;
+    top: 5em;
+    /*position: absolute;*/
+    font-size: 1.618em;
+    color: #F0F0F0;
+    outline: dotted 1px red;
+    font-family: roboto;
+  }
+
+  .test-image-contents p {
+    color: #F0F0F0;
+    display: block;
+    position: absolute;
+    width: 33em;
+    top: 14em;
+    left: 12em;
+    font-size: 1.1em;
+    font-family: lora;
+  }
+
+  .test-image-contents ul {
+    /*display: inline;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 24em;
+    left: 12em;
+    color: white;
+    list-style: none;
+  }
+
+
+  .main-nav-bar > ul > li {
+    background-color: #0ABAF5;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
 }
