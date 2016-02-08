@@ -2,16 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1” />
     <title>Hugo A Guerra - Portfolio</title>
-    <link href="styles/base.css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
-    <link href="styles/layout.css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
-    <link href="styles/module.css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
-    <link href="styles/state.css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
-    <link href="styles/theme.css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
+    <link href="styles/base.css" rel="stylesheet" type="text/css">
+    <link href="styles/module.css" rel="stylesheet" type="text/css">
+    <link href="styles/layout.css" rel="stylesheet" type="text/css">
+    <link href="styles/state.css" rel="stylesheet" type="text/css">
+    <link href="styles/theme.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto|Lora' rel='stylesheet' type='text/css'>
   <script id="project-template" type="text/x-handlebars-template">
-    <article data-category="{{category}}">
+    <article class="project-container" data-category="{{category}}">
       <header>
         <h2>{{title}}</h2>
         <div class="byline">
@@ -19,7 +19,7 @@
         </div>
       </header>
       <section class="project-body">
-        {{{image}}}<p>{{{body}}}</p>
+          <section class="project-image">{{{image}}}</section><p>{{{body}}}</p>
       </section>
     </article>
   </script>
@@ -31,16 +31,16 @@
         <h1>Hugo Alejandro Guerra</h1>
         <h3>Web Designer & Developer</h3>
         <p>I am a web developer from Seattle. I enjoy building all kinds of things on the web, from static sites to rich, dynamic web apps. If you are a business interested in establishing a web presence or an employer looking to hire, feel free to contact me below. </p>
-        <ul>
+        <!-- <ul>
           <li>I need a website > </li>
           <li>I'm looking to hire > </li>
-        </ul>
+        </ul> -->
       </section>
       <nav class="main-nav-bar">
         <section class="hmenu-container">
-          <img src="images/hmenu.png" class="hmenu-image" alt="" />
+          <img src="images/hmenu.png" class="hmenu-image" />
         </section>
-        <ul>
+        <ul id="hmenu-items" >
           <li class="menu-item" data-content="projects"><a href="#">Home</a></li>
           <li class="menu-item" data-content="about"><a href="#">About</a></li>
         </ul>

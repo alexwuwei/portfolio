@@ -7,8 +7,9 @@ projectView.handleMainNavBar = function () {
     var $dataType = $(this).data('content');
     console.log($dataType);
     console.log(this);
-    $('#' + $dataType).show();
+    $('#' + $dataType).fadeIn('slow');
   });
 };
+
 
 projectView.handleMainNavBar();

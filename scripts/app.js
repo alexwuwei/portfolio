@@ -39,3 +39,7 @@ projects.forEach(function(a){
 });
 
 $('.template').hide();
+
+// $('.hmenu-image').on('hover', function () {
+//   $('#hmenu-items').slideDown('slow');
+// });
