@@ -8,6 +8,8 @@ function Project (opts) {
   this.image = opts.image;
 }
 
+Project.all = [];
+
 Project.prototype.toHtml = function () {
   // var $newProject = $('article.template').clone();
   // $newProject.attr('data-category', this.category);
@@ -26,20 +28,55 @@ Project.prototype.toHtml = function () {
 
 };
 
-rawData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
+Project.loadAll = function () {
+  rawData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+  });
 
-rawData.forEach(function(ele) {
-  projects.push(new Project(ele));
-});
+  rawData.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  });
+};
 
-projects.forEach(function(a){
-  $('#projects').append(a.toHtml());
-});
-
-$('.template').hide();
+// projects.forEach(function(a){
+//   $('#projects').append(a.toHtml());
+// });
+//
+// $('.template').hide();
 
 // $('.hmenu-image').on('hover', function () {
 //   $('#hmenu-items').slideDown('slow');
 // });
+
+Project.fetchAll = function() {
+  if (localStorage.rawData) {
+    $.ajax ({
+      type: 'HEAD',
+      url: 'data/projectArticles.json',
+      success: function (data, message, xhr) {
+        console.log(xhr);
+        var eTag = xhr.getResponseHeader('eTag');
+        if (!localStorage.eTag || localStorage.eTag !== eTag) {
+          localStorage.eTag = eTag;
+          $.getJSON('data/projectArticles.json', function (data) {
+            console.log(data);
+            Project.loadAll(data); //revisit
+            projectView.initIndexPage(); //revisit
+            localStorage.setItem('data', JSON.stringify(data));
+          });
+        } else {
+          Project.loadAll(JSON.parse(localStorage.rawData));
+          console.log('all projects: ' + Project.all);
+          viewRender.initIndexPage(); //revisit
+        }
+      }
+    });
+  } else {
+    $.getJSON('data/projectArticles.json', function (data) {
+      console.log(data);
+      Project.loadAll(data);
+      projectView.initIndexPage(); //revisit
+      localStorage.setItem('data', JSON.stringify(data));
+    });
+  }
+};
