@@ -38,15 +38,6 @@ Project.loadAll = function () {
   });
 };
 
-// projects.forEach(function(a){
-//   $('#projects').append(a.toHtml());
-// });
-//
-// $('.template').hide();
-
-// $('.hmenu-image').on('hover', function () {
-//   $('#hmenu-items').slideDown('slow');
-// });
 
 Project.fetchAll = function() {
   if (localStorage.rawData) {
