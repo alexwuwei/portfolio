@@ -35,8 +35,12 @@
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
 
-    rawData.forEach(function(ele) {
-      Project.all.push(new Project(ele));
+    // rawData.forEach(function(ele) {
+    //   Project.all.push(new Project(ele));
+    // });
+
+    Project.all = rawData.map(function(ele) {
+      return new Project(ele);
     });
   };
 
