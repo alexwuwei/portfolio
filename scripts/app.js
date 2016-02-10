@@ -78,5 +78,13 @@
     }
   };
 
+  // var combinedDaysAgo = Project.all.reduce(function(a, b){
+  //   return {daysAgo: a.daysAgo + b.daysAgo};
+  // });
+  //
+  // $('.daysAgoSpan').append(combinedDaysAgo);
+
+
+
   module.Project = Project;
 })(window);
