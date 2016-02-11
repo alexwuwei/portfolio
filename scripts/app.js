@@ -3,25 +3,20 @@
   var projects = [];
 
   function Project (opts) {
-    this.title = opts.title;
-    this.category = opts.category;
-    this.publishedOn = opts.publishedOn;
-    this.body = opts.body;
-    this.image = opts.image;
+    //do not delete commented lines below, keeping them there for later study
+    // this.title = opts.title;
+    // this.category = opts.category;
+    // this.publishedOn = opts.publishedOn;
+    // this.body = opts.body;
+    // this.image = opts.image;
+    Object.keys(opts).forEach(function(e, index, keys) {
+      this[e] = opts[e];
+    }, this);
   }
 
   Project.all = [];
 
   Project.prototype.toHtml = function () {
-  // var $newProject = $('article.template').clone();
-  // $newProject.attr('data-category', this.category);
-  // $newProject.find('h2').text(this.title);
-  // $newProject.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
-  // $newProject.find('.project-body').append(this.image);
-  // $newProject.find('.project-body').append(this.body);
-  // $newProject.append('<hr>');
-  // $newProject.removeClass();
-  // return $newProject;
     var template = Handlebars.compile($('#project-template').text());
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     this.publishStatus = this.publishedOn ? 'published' + this.daysAgo + ' days ago' : '(draft)';
@@ -34,10 +29,6 @@
     rawData.sort(function(a,b) {
       return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
     });
-
-    // rawData.forEach(function(ele) {
-    //   Project.all.push(new Project(ele));
-    // });
 
     Project.all = rawData.map(function(ele) {
       return new Project(ele);
@@ -81,8 +72,5 @@
   // });
   //
   // $('.daysAgoSpan').append(combinedDaysAgo);
-
-
-
   module.Project = Project;
 })(window);
