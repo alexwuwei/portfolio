@@ -25,16 +25,21 @@
   display: flex;
   flex-direction: column;
   font-family: roboto;
-  font-size: 1em;
+  font-size: 1.28em;
+  text-align: center;
   color: #F0F0F0;
   list-style: none;
   /*background-color: #0ABAF5;*/
   opacity: 0.9;
+  padding: 1px;
+  margin-top: 0%
 }
 
 .main-nav-bar > ul > li {
   border-bottom: 1px solid white;
   padding-top: 3%;
+  background-color: #0ABAF5;
+  padding-left: 1px;
 }
 
 .hmenu-container {
