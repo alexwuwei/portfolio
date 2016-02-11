@@ -55,12 +55,7 @@
           var eTag = xhr.getResponseHeader('eTag');
           if (!localStorage.eTag || localStorage.eTag !== eTag) {
             localStorage.eTag = eTag;
-            $.getJSON('data/projectArticles.json', function (data) {
-              console.log(data);
-              Project.loadAll(data); //revisit
-              projectView.initIndexPage(); //revisit
-              localStorage.setItem('data', JSON.stringify(data));
-            });
+            Project.handleLocalJson();
           } else {
             Project.loadAll(JSON.parse(localStorage.rawData));
             console.log('all projects: ' + Project.all);
@@ -69,15 +64,18 @@
         }
       });
     } else {
-      $.getJSON('data/projectArticles.json', function (data) {
-        console.log(data);
-        Project.loadAll(data);
-        projectView.initIndexPage(); //revisit
-        localStorage.setItem('data', JSON.stringify(data));
-      });
-    }
+      Project.handleLocalJson();
+    };
   };
 
+  Project.handleLocalJson = function () {
+    $.getJSON('data/projectArticles.json', function (data) {
+      console.log(data);
+      Project.loadAll(data);
+      projectView.initIndexPage(); //revisit
+      localStorage.setItem('data', JSON.stringify(data));
+    });
+  };
   // var combinedDaysAgo = Project.all.reduce(function(a, b){
   //   return {daysAgo: a.daysAgo + b.daysAgo};
   // });
