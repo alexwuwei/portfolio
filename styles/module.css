@@ -4,7 +4,7 @@
   padding: 1%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   font-family: roboto;
   padding-right: 20%;
   border-bottom: 2px solid white;
@@ -27,14 +27,14 @@
   background-image: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-120534.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  outline: dotted 1px red;
+  /*outline: dotted 1px red;*/
 }
 
 .test-image-contents {
-  height: 32em;
+  height: 35em;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
-  outline: dotted 1px red;
+  /*outline: dotted 1px red;*/
   color: #F0F0F0;
 }
 
@@ -42,7 +42,7 @@
   display: block;
   position: absolute;
   font-size: 2.618em;
-  outline: dotted 1px red;
+  /*outline: dotted 1px red;*/
   color: #F0F0F0;
   padding-right: 2%;
 }
@@ -56,7 +56,7 @@
   /*position: absolute;*/
   font-size: 1.618em;
   color: #F0F0F0;
-  outline: dotted 1px red;
+  /*outline: dotted 1px red;*/
   font-family: roboto;
 }
 
@@ -120,7 +120,7 @@
     display: block;
     position: absolute;
     font-size: 4.23em;
-    outline: dotted 1px red;
+    /*outline: dotted 1px red;*/
     color: #F0F0F0;
   }
 
@@ -133,7 +133,7 @@
     /*position: absolute;*/
     font-size: 1.618em;
     color: #F0F0F0;
-    outline: dotted 1px red;
+    /*outline: dotted 1px red;*/
     font-family: roboto;
   }
 
