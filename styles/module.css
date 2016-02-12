@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: lora;
+  font-family: roboto;
   padding-right: 20%;
   border-bottom: 2px solid white;
   color: black;
@@ -68,7 +68,7 @@
   top: 40%;
   left: 15%;
   font-size: 1.1em;
-  font-family: lora;
+  font-family: roboto;
 }
 
 .test-image-contents ul {
@@ -141,11 +141,11 @@
     color: #F0F0F0;
     display: block;
     position: absolute;
-    width: 33em;
-    top: 14em;
-    left: 12em;
-    font-size: 1.1em;
-    font-family: lora;
+    width: 26em;
+    top: 13em;
+    left: 11em;
+    font-size: 1.3em;
+    font-family: roboto;
   }
 
   .test-image-contents ul {
@@ -162,7 +162,7 @@
 
 
   .main-nav-bar > ul > li {
-    background-color: #0ABAF5;
+    background-color: #F04;
     color: white;
     padding: 14px 25px;
     text-align: center;

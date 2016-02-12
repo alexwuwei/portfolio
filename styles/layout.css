@@ -37,15 +37,15 @@
 
 .main-nav-bar > ul > li {
   border-bottom: 1px solid white;
-  padding-top: 3%;
-  background-color: #0ABAF5;
-  padding-left: 1px;
+  padding-top: 2%;
+  background-color: #F04;
+  /*padding-left: 1px;*/
 }
 
 .hmenu-container {
   width: 10%;
   outline: dotted 1px red;
-  background-color: #0ABAF5;
+  background-color: #F04;
   opacity: 0.9;
   padding-left: 40%;
   padding-right: 50%;
@@ -57,16 +57,6 @@
 
 }
 @media screen and (min-width: 640px) {
-  /*.personHeader {
-    background-color: rgba(0, 56, 41, 0.8);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    border-bottom: 1px solid white;
-    font-family: sans-serif;
-    padding-right: 2%;
-  }*/
 
   .main-nav-bar {
     background-color: rgba(0, 0, 0, 0.6);
