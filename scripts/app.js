@@ -11,7 +11,7 @@
     // this.image = opts.image;
     Object.keys(opts).forEach(function(e, index, keys) {
       this[e] = opts[e];
-    }, this);
+    }, this);  //last this is the object itself, since it is being fed each of the key:value pairs ie. properties. please don't delete this line yet TA.
   }
 
   Project.all = [];
