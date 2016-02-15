@@ -36,7 +36,7 @@
   };
 
 
-  Project.fetchAll = function() {
+  Project.fetchAll = function(next) {
     if (localStorage.rawData) {
       $.ajax ({
         type: 'HEAD',
@@ -54,8 +54,10 @@
           }
         }
       });
+      next();
     } else {
       Project.handleLocalJson();
+      next();
     };
   };
 
