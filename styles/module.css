@@ -87,25 +87,29 @@
 
 
 .contact-form input  {
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 7px 15px;
   text-align: left;
+  box-shadow: 2px 2px 2px #888888;
 }
 
 .contact-form textarea  {
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 7px 15px;
   text-align: left;
+  box-shadow: 2px 2px 2px #888888;
 }
 
 .contact-button {
-  background-color: blue;
+  background-color: #F04;
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 1px;
+  font-family: roboto;
+  font-size: 14px;
 }
 
 .social-container a {
@@ -122,7 +126,6 @@
     display: block;
     position: absolute;
     font-size: 4.23em;
-    /*outline: dotted 1px red;*/
     color: #F0F0F0;
   }
 
@@ -135,7 +138,6 @@
     /*position: absolute;*/
     font-size: 1.618em;
     color: #F0F0F0;
-    /*outline: dotted 1px red;*/
     font-family: roboto;
   }
 
@@ -144,7 +146,7 @@
     display: block;
     position: absolute;
     width: 45%;
-    line-height: 145%; 
+    line-height: 145%;
     top: 13em;
     left: 25%;
     font-size: 1.3em;
@@ -172,5 +174,17 @@
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
+  }
+
+  .contact-form input  {
+    /*border-radius: 5px;*/
+    padding: 7px 15px;
+    text-align: left;
+  }
+
+  .contact-form textarea  {
+    /*border-radius: 5px;*/
+    padding: 7px 15px;
+    text-align: left;
   }
 }
