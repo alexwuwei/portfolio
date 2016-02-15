@@ -13,7 +13,7 @@
 }
 
 .project-container {
-  display: inline;
+  display: inline-block;
 }
 
 
@@ -31,7 +31,7 @@
 }
 
 .test-image-contents {
-  height: 35em;
+  height: 37em;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
   /*outline: dotted 1px red;*/
@@ -45,6 +45,7 @@
   /*outline: dotted 1px red;*/
   color: #F0F0F0;
   padding-right: 2%;
+  padding-left: 1%;
 }
 
 
@@ -58,6 +59,7 @@
   color: #F0F0F0;
   /*outline: dotted 1px red;*/
   font-family: roboto;
+  padding-left: 1%;
 }
 
 .test-image-contents p {
@@ -141,9 +143,10 @@
     color: #F0F0F0;
     display: block;
     position: absolute;
-    width: 26em;
+    width: 45%;
+    line-height: 145%; 
     top: 13em;
-    left: 11em;
+    left: 25%;
     font-size: 1.3em;
     font-family: roboto;
   }
