@@ -4,12 +4,26 @@
   "description": "Professional portfolio for Hugo A Guerra. Good stuff.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Hugo A Guerra",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3",
-    "express-request-proxy": "^1.0.10"
-  }
+    "express": "^4.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexwuwei/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "hugo",
+    "a",
+    "guerra"
+  ],
+  "bugs": {
+    "url": "https://github.com/alexwuwei/portfolio/issues"
+  },
+  "homepage": "https://github.com/alexwuwei/portfolio#readme"
 }

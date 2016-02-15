@@ -2,7 +2,8 @@
   var aboutController = {};
 
   aboutController.index = function () {
-    $('#projects #about').hide();
+    $('#projects').hide();
     $('#about').show();
   };
+  module.aboutController = aboutController;
 })(window);

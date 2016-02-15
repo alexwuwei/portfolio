@@ -1,10 +1,11 @@
 (function(module) {
-  var articlesController = {};
+  var articleController = {};
 
-  articlesController.index = function(){
+  articleController.index = function(){
     Project.fetchAll(projectView.initIndexPage);
-    $('#projects #about').hide();
+    $('#about').hide();
     $('#projects').show();
   };
 
+  module.articleController = articleController;
 })(window);
