@@ -13,7 +13,7 @@
 }
 
 .project-container {
-  display: inline;
+  display: inline-block;
 }
 
 
@@ -31,7 +31,7 @@
 }
 
 .test-image-contents {
-  height: 35em;
+  height: 37em;
   position: relative;
   background-color: rgba(0, 0, 0, 0.6);
   /*outline: dotted 1px red;*/
@@ -45,6 +45,7 @@
   /*outline: dotted 1px red;*/
   color: #F0F0F0;
   padding-right: 2%;
+  padding-left: 1%;
 }
 
 
@@ -58,6 +59,7 @@
   color: #F0F0F0;
   /*outline: dotted 1px red;*/
   font-family: roboto;
+  padding-left: 1%;
 }
 
 .test-image-contents p {
@@ -85,25 +87,29 @@
 
 
 .contact-form input  {
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 7px 15px;
   text-align: left;
+  box-shadow: 2px 2px 2px #888888;
 }
 
 .contact-form textarea  {
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   padding: 7px 15px;
   text-align: left;
+  box-shadow: 2px 2px 2px #888888;
 }
 
 .contact-button {
-  background-color: blue;
+  background-color: #F04;
   color: white;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 1px;
+  font-family: roboto;
+  font-size: 14px;
 }
 
 .social-container a {
@@ -120,7 +126,6 @@
     display: block;
     position: absolute;
     font-size: 4.23em;
-    /*outline: dotted 1px red;*/
     color: #F0F0F0;
   }
 
@@ -133,7 +138,6 @@
     /*position: absolute;*/
     font-size: 1.618em;
     color: #F0F0F0;
-    /*outline: dotted 1px red;*/
     font-family: roboto;
   }
 
@@ -141,9 +145,10 @@
     color: #F0F0F0;
     display: block;
     position: absolute;
-    width: 26em;
+    width: 45%;
+    line-height: 145%;
     top: 13em;
-    left: 11em;
+    left: 25%;
     font-size: 1.3em;
     font-family: roboto;
   }
@@ -169,5 +174,17 @@
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
+  }
+
+  .contact-form input  {
+    /*border-radius: 5px;*/
+    padding: 7px 15px;
+    text-align: left;
+  }
+
+  .contact-form textarea  {
+    /*border-radius: 5px;*/
+    padding: 7px 15px;
+    text-align: left;
   }
 }
