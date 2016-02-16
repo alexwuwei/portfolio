@@ -42,8 +42,8 @@
           <img src="images/hmenu.png" class="hmenu-image" />
         </section>
         <ul id="hmenu-items" >
-          <li class="menu-item" data-content="projects"><a href="#">Home</a></li>
-          <li class="menu-item" data-content="about"><a href="#">About</a></li>
+          <li class="menu-item" data-content="projects"><a href="/">Home</a></li>
+          <li class="menu-item" data-content="about"><a href="/about">About</a></li>
         </ul>
       </nav>
     </header>
@@ -79,12 +79,19 @@
     </section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="scripts/page.js"></script>
   <script type="text/javascript" src="scripts/projects.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
   <script type="text/javascript" src="scripts/viewRender.js"></script>
+  <script type="text/javascript" src="scripts/articleController.js"></script>
+  <script type="text/javascript" src="scripts/aboutController.js"></script>
+  <script type="text/javascript" src="scripts/routes.js">
+
+  </script>
   <script>
-    Project.fetchAll();
-    projectView.initIndexPage();
+    Project.fetchAll(projectView.initIndexPage);
+
+
   </script>
   </body>
 </html>
