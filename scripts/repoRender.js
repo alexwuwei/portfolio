@@ -3,9 +3,12 @@
 
   var ui = function() {
     var $about = $('#about');
+    var $aboutRepos = $('#aboutRepos');
+    var $projects = $('#projects');
 
-    $about.find('section').empty();
-    $about.show().siblings().hide();
+    $aboutRepos.find('ul').empty();
+    $projects.hide();
+    $about.show();
   };
 
   var render = function(repo) {
@@ -14,7 +17,7 @@
 
   repoView.index = function () {
     ui();
-    $('#about').append(
+    $('#aboutRepos ul').append(
       repos.with('name').map(render)
     );
   };

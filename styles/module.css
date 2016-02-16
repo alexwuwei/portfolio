@@ -187,4 +187,8 @@
     padding: 7px 15px;
     text-align: left;
   }
+
+  .about-container a {
+    color: black;
+  }
 }
