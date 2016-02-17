@@ -3,15 +3,9 @@
   var projects = [];
 
   function Project (opts) {
-    //do not delete commented lines below, keeping them there for later study
-    // this.title = opts.title;
-    // this.category = opts.category;
-    // this.publishedOn = opts.publishedOn;
-    // this.body = opts.body;
-    // this.image = opts.image;
     Object.keys(opts).forEach(function(e, index, keys) {
       this[e] = opts[e];
-    }, this);  //last this is the object itself, since it is being fed each of the key:value pairs ie. properties. please don't delete this line yet TA.
+    }, this);
   }
 
   Project.all = [];
@@ -69,10 +63,5 @@
       localStorage.setItem('data', JSON.stringify(data));
     });
   };
-  // var combinedDaysAgo = Project.all.reduce(function(a, b){
-  //   return {daysAgo: a.daysAgo + b.daysAgo};
-  // });
-  //
-  // $('.daysAgoSpan').append(combinedDaysAgo);
   module.Project = Project;
 })(window);
