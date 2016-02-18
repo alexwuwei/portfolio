@@ -57,7 +57,7 @@
       next();
     } else {
       Project.handleLocalJson();
-      next();
+      // next();
     };
   };
 
